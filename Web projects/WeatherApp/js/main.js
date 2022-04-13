@@ -83,7 +83,7 @@ const displayWeather = function (weatherData) {
 
 const getWeather = async function (city) {
 	const weatherResponse = await fetch(
-		`http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`
+		`https://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`
 	)
 		.then((response) => response.json())
 		.then((data) => data);
