@@ -87,7 +87,7 @@ const getWeather = async function (city) {
 	)
 		.then((response) => response.json())
 		.then((data) => data);
-
+	console.log(weatherResponse);
 	displayWeather(weatherResponse);
 };
 
@@ -97,49 +97,8 @@ searchBtn.addEventListener('click', function (e) {
 	const location = document.querySelector('input').value;
 	loadSpinner();
 	document.querySelector('input').value = '';
+	console.log(location)
 	getWeather(location);
 });
 
-/*
 
-*********OLd Key************
-
-const weather = {
-	apiKey: '7a6efa47e55a34dd9a64cfffa4ad44b1',
-	fetchWeather: function (city) {
-		fetch(
-			'http://api.openweathermap.org/data/2.5/weather?q=' +
-				city +
-				'&units=metric&appid=' +
-				this.apiKey
-		)
-			.then((response) => response.json())
-			.then((data) => {
-				console.log(data);
-				this.displayWeather(data);
-			});
-	},
-	displayWeather: function (data) {
-		const { name } = data;
-		const { icon, description } = data.weather[0];
-		const { temp, humidity } = data.main;
-		const { speed } = data.wind;
-		console.log(name, icon, temp, humidity, speed, description);
-		cityName.innerText = name;
-	},
-	search: function () {
-		const searchCity = document.querySelector(
-			'.header__search--search-field'
-		).value;
-		console.log(searchCity);
-		this.fetchWeather(searchCity);
-	},
-};
-
-searchBtn.addEventListener('click', function (e) {
-	e.preventDefault();
-	console.log(e);
-	weather.search();
-});
-
-*/
