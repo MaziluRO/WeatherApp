@@ -1,0 +1,73 @@
+.result {
+	margin: auto 0;
+	text-align: center;
+
+	&__message {
+		max-width: 55rem;
+		width: 100%;
+		margin: 0 auto;
+		padding: 5rem 4rem;
+		display: flex;
+		align-items: center;
+
+		div {
+			i {
+				color: var(--color-primary);
+			}
+		}
+
+		p {
+			font-size: 1.8rem;
+			margin-left: 1.5rem;
+		}
+	}
+
+	&__city-weather {
+		&--name {
+			font-size: 3rem;
+			margin-bottom: 3rem;
+			color: var(--color-primary);
+		}
+
+		&--container {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+
+			&__temperature-info {
+				&--temperature {
+					font-size: 3rem;
+				}
+
+				&--status {
+					font-size: 2.5rem;
+				}
+			}
+
+			&__description {
+				& > p {
+					font-size: 1.7rem;
+				}
+			}
+		}
+	}
+
+	.spinner {
+		svg {
+			height: 6rem;
+			width: 6rem;
+			fill: var(--color-primary);
+			animation: rotate 2s infinite linear;
+		}
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/fbadad80a0.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Main Style Sheet -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- JS Folder -->
+		<script defer src="js/main.js"></script>
+
+		<title>WeatherApp</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1>WeatherApp</h1>
+				<form class="header__search">
+					<input
+						type="text"
+						class="header__search--search-field"
+						placeholder="Search for a city's weather..."
+					/>
+					<button class="header__search--btn btn">
+						<i class="fas fa-search"></i>
+						<span>Search</span>
+					</button>
+				</form>
+			</header>
+			<section class="result">
+				<div class="result__message">
+					<div>
+						<i class="far fa-smile"></i>
+					</div>
+					<p>Start by searching for a city. Have a good day!</p>
+				</div>
+
+				<!--
+				<div class="spinner">
+					<svg>
+						<use href="img/icons.svg#icon-loader"></use>
+					</svg>
+				</div>
+				-->
+				<!--	
+				<div class="result__city-weather">
+					<h2 class="result__city-weather--name">Bucharest</h2>
+					<div class="result__city-weather--container">
+						<div class="result__city-weather--container__temperature-info">
+							<p
+								class="result__city-weather--container__temperature-info--temperature"
+							>
+								36&deg;C
+							</p>
+							<p
+								class="result__city-weather--container__temperature-info--status"
+							>
+								status
+							</p>
+						</div>
+
+						<div class="result__city-weather--container__description">
+							<p class="result__city-weather--container__description--humidity">
+								Humidity:
+							</p>
+							<p
+								class="result__city-weather--container__description--precipitation"
+							>
+								Precipitation:
+							</p>
+
+							<p class="result__city-weather--container__description--wind">
+								Wind degree:
+							</p>
+
+							<p
+								class="result__city-weather--container__description--wind-direction"
+							>
+								Wind direction:
+							</p>
+							<p
+								class="result__city-weather--container__description--wind-speed"
+							>
+								Wind speed:
+							</p>
+
+							<p
+								class="result__city-weather--container__description--visibility"
+							>
+								Visibility:
+							</p>
+						</div>
+					</div>
+				</div>
+				-->
+			</section>
+		</div>
+	</body>
+</html>

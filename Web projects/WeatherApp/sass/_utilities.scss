@@ -1,0 +1,51 @@
+:root {
+	font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.9;
+	background-color: var(--color-primary);
+}
+
+li {
+	list-style: none;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	//color: var(--color-quinary);
+	font-weight: font-weight(font-weight-light);
+	letter-spacing: 0.2rem;
+	font-size: font-size(font-size-small);
+}
+
+i {
+	//color: var(--color-primary);
+	font-size: font-size(font-size-medium);
+}
+
+.container {
+	max-width: 100rem;
+	min-height: 60rem;
+	margin: 4vh auto;
+	border-radius: border-roundness(soft-round-borders);
+	background: var(--color-secondary);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.btn {
+	padding: 1.5rem 4rem;
+	font-size: 1.5rem;
+}
